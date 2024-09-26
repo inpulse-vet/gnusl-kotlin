@@ -1,0 +1,13 @@
+[versions]
+
+#kotlin
+androidGradlePlugin = "8.6.1"
+kotlin = "2.0.20"
+
+[libraries]
+kotlin-stdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib-jdk7", version.ref = "kotlin" }
+
+[plugins]
+android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
